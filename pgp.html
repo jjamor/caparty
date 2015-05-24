@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<title>GPG Party en CAParty</title>
+<link rel="stylesheet" type="text/css" href="style.css" media="screen" />
+</head>
+<body>
+<div id="header">
+<h1>GPGParty en CAParty</h1>
+ <div id="menu">
+  <ul id="nav">
+   <li><a href="index.html">Home</a></li>
+   <li><a href="cacert.html">CACert</a></li>
+   <li><a href="pgp.html">PGP</a></li>
+  </ul>
+ </div>
+</div>
+<div id="content">
+<div id="right">
+<h2>Pasos para participar en la GPG-Party</h2>
+<!--
+<p>Los usuarios deben subir su clave a pgp.rediris.es:
+</p>
+
+<pre>
+$ gpg --keyserver pgp.rediris.es --send-keys KEYID
+</pre>
+-->
+<p>Los usuarios volcarán a un fichero su clave (sustituyendo KEYID por su identificador de clave):
+</p>
+<pre>
+$ gpg -a --export KEYID > miclave.asc
+</pre>
+<p>Los usuarios enviarán por email a la dirección <a href="mailto:caparty@geek.org.es">caparty@geek.org.es</a> su clave. El mensaje debe contener en el Subject la cadena '[GPG Party Medialab]' (dan igual las mayúsculas) e incluir como adjunto el archivo miclave.asc.
+</p><p>La organización enviará una respuesta automática a la dirección desde la que se envió el mensaje, diciendo que la clave se ha recibido y procesado correctamente.
+</p><p>Se admitir&aacute;n claves hasta las 00:00h del sábado 8 de octubre.
+</p><p>Con todas las claves recibidas se enviará a los participantes un fichero con todas las claves, que todos deberán traer impreso al evento. Como medida de seguridad, los participantes deberán calcular la suma MD5 y SHA1 de ese fichero, y anotarla a mano <em>antes de la pgp party</em>.
+</p><p>En la pgp party, se informará de viva voz las sumas MD5 y SHA1 del fichero de texto. Si nadie discrepa, se puede comenzar con el firmado.
+</p><p>Los participantes deben traer consigo, además del impreso con las claves, una identificación válida en España. La aceptación de una identificación depende de cada persona, por lo que se recomienda traer DNI o pasaporte.
+</p><p>Finalizado el evento se informará a los participantes de los pasos que harán a continuación, básicamente firmar aquellas claves que hayan podido certificar en persona, y enviar las firmas de vuelta al servidor PGP.
+</div>
+	
+<div id="left">
+	<div class="box">
+				<h2>Enlaces :</h2>
+				<ul>
+				<li><a href="http://www.cacert.org/">CACert.org</a></li>
+				<li><a href="http://www.gnupg.org">GnuPG: The GNU Privacy Guard</a></a></li>
+				<li><a href="http://www.medialab-prado.es">Medialab-Prado</a></li>
+				</ul>
+	</div>
+		
+    <div class="box">
+	   <div style="font-size: 0.8em;">Design by <a href="http://www.minimalistic-design.net">Minimalistic Design</a></div>
+	</div>
+</div>
+</div>
+</body>
+</html>
